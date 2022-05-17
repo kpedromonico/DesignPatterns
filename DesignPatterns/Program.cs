@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Behavioural.Observer;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,9 @@ namespace DesignPatterns
 {
     public static class Program
     {
-        public static void Main()
+        public async static Task Main()
         {
-
+            await ObserverProgram.Run();
         }
     }
 }
