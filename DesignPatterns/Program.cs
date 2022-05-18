@@ -1,7 +1,4 @@
-﻿using DesignPatterns.Behavioural.Observer;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DesignPatterns.Structural.Decorator;
 
 namespace DesignPatterns
 {
@@ -9,7 +6,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            await ObserverProgram.Run();
+            DecoratorProgram.Run();
         }
     }
 }
