@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Creational.Factory;
-using DesignPatterns.Structural.Decorator;
+﻿using DesignPatterns.Creational.AbstractFactory;
 
 namespace DesignPatterns
 {
@@ -7,7 +6,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            FactoryProgram.Run();
+            AbstractFactoryProgram.Run();
         }
     }
 }

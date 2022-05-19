@@ -7,9 +7,4 @@
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Folder Include="Creational\AbstractFactory\Factories\" />
-	  <Folder Include="Creational\AbstractFactory\Bikes\" />
-	</ItemGroup>
-
 </Project>
