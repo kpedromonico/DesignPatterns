@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.Singleton;
 
 namespace DesignPatterns
 {
@@ -6,7 +7,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            AbstractFactoryProgram.Run();
+            SingletonProgram.Run();
         }
     }
 }
