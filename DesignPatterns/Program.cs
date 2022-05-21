@@ -1,6 +1,4 @@
-﻿using DesignPatterns.Behavioural.Command;
-using DesignPatterns.Creational.AbstractFactory;
-using DesignPatterns.Creational.Singleton;
+﻿using DesignPatterns.Structural.Adapter;
 
 namespace DesignPatterns
 {
@@ -8,7 +6,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            CommandProgram.Run();
+            AdapterProgram.Run();
         }
     }
 }
