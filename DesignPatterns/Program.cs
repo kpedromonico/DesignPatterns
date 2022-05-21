@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Creational.AbstractFactory;
+﻿using DesignPatterns.Behavioural.Command;
+using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.Singleton;
 
 namespace DesignPatterns
@@ -7,7 +8,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            SingletonProgram.Run();
+            CommandProgram.Run();
         }
     }
 }
