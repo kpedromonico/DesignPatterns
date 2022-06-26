@@ -1,10 +1,5 @@
 ﻿using DesignPatterns.Structural.Adapter.NonStandardOutlet;
 using DesignPatterns.Structural.Adapter.Outlet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.Adapter
 {
@@ -18,17 +13,22 @@ namespace DesignPatterns.Structural.Adapter
 
             Console.WriteLine("--------------------------");
             outlet = new BROutlet();
-            outlet.ConnectToOutlet();
+            ConnectToOutlet(outlet);
 
             Console.WriteLine("--------------------------");
             outlet = new USOutlet();
-            outlet.ConnectToOutlet();
+            ConnectToOutlet(outlet);
 
 
             // Connecting a non-standard input
             Console.WriteLine("--------------------------");
             var usb = new USBInput();
             outlet = new USBAdapter(new USOutlet(), usb);
+            ConnectToOutlet(outlet);
+        }
+
+        internal static void ConnectToOutlet(IOutlet outlet)
+        {
             outlet.ConnectToOutlet();
         }
     }

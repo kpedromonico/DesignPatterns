@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Structural.Adapter;
+﻿using DesignPatterns.Structural.Facade;
 
 namespace DesignPatterns
 {
@@ -6,7 +6,7 @@ namespace DesignPatterns
     {
         public async static Task Main()
         {
-            AdapterProgram.Run();
+            FacadeProgram.Run();
         }
     }
 }
